@@ -61,6 +61,7 @@ header nav .menus .menu:hover{
   display: flex;
   flex-direction: column;
 }
+.dropdown-content .small-dev{display: none}
 header nav .menus .play{
   background-color: #881919 ;
 }
@@ -71,7 +72,8 @@ header nav h1{
   margin-top: 25px;
   color: white;
   margin-left: 15px;
-  font-size: 50px
+  font-size: 50px;
+  text-align: center;
 }
 main{
   display: flex;
@@ -79,18 +81,18 @@ main{
   background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../bg.jpg");
   height: 100vh ;
 }
-main .right{
+main .left{
   margin: auto 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-main .right p{
+main .left p{
   font-size: 50px;
   color: white;
   text-align: center;
 }
-main .left{
+main .right{
   margin: auto 0;
 }
 .slides {display: none;}
@@ -182,4 +184,45 @@ footer .footer-content .social img{
 footer .footer-content div p{
   color: white;
   text-align: center
+}
+@media screen and (max-width: 600px) {
+  header{
+    height: 20vh
+  }
+  header nav{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .logo h1{
+    font-size: 250%
+  }
+  header nav .menus{
+    margin: 5px 0;
+    justify-content: center;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: auto;
+    width: 100vw;
+    height: 100vh
+  }
+  main div{
+    width: 80vw;
+  }
+  main .left p{
+    margin-top: 12px;
+    font-size: 150%;
+    text-align: center;
+  }
+  .change_content{
+    font-size: 150%
+  }
+.play{
+  display: none
+}
+.dropdown-content .small-dev{
+  display: block;
+}
 }
