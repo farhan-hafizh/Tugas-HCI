@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styleRegistration.css">
+    <link rel="stylesheet" href="assets/css/styleRegistration.css">
 </head>
-<body>
+<body onload="validate()">
     <h1 style="text-align: center;">REGISTRATION FORM</h1>
     <form name="RegForm" onsubmit=" return validate()" method="post">
         <label>Name :</label>
@@ -17,7 +17,7 @@
         <input id="email" name="email" placeholder="Enter Email" type="text">
         <br>
         <label>Password :</label>
-        <input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">  
+        <input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">
         <br>
         <label>Gender :</label>
         <input id="male" name="gender" type="radio" value="Male">
@@ -28,12 +28,12 @@
         <input type="checkbox" name="terms" id="terms">
         <label>Agree with terms and condition </label>
         <p>
-            <input type="submit" 
+            <input type="submit"
                    value="Submit" name="Submit" />
-            <input type="reset" 
+            <input type="reset"
                    value="Reset" name="Reset" />
         </p>
     </form>
-    <script src="validation.js"></script>
+    <script src="assets/javascript/script.js"></script>
 </body>
 </html>
