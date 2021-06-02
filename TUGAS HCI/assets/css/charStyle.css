@@ -1,25 +1,30 @@
-main .holder{
+main .slides{
+  height: auto;
+  width: 70%;
   background-color:white;
-  height: auto;
+}
+main .slides .doc{
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  padding-top: 20px
+}
+main .slides .image{
   width: 70%;
+  height: auto;
+  margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
-main .holder .image{
+main .slides .desc{
   width: 70%;
   height: auto;
-  display: flex;
-  justify-content: center;
+  margin: auto;
 }
-main .holder .image img{
-  width: 250px;
-  height: 150px
+main .slides .image img{
+  width: 350px;
+  height: 250px
 }
-main .holder .desc{
-  width: 70%;
-  height: auto
-}
-main .holder .desc p,li{
+main .slides .desc p,li{
   align-items: center;
 }
