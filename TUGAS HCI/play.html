@@ -22,10 +22,15 @@
 		</nav>
 </header>
 <main>
-	<video autoplay loop id="bgVid">
-	  <source src="assets/video/vid.mp4" type="video/mp4">
-	</video>
-
+	<form class="login-form" action="index.html" method="post">
+		<label>Email :</label>
+		<input id="email" name="email" placeholder="Enter Email" type="text" value="">
+		<br>
+		<label>Password :</label>
+		<input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">
+		<input type="submit" value="Submit" name="Submit"/>
+	</form>
+	<video src="assets/video/vid.mp4" autoplay loop id="bgVid" type="video/mp4"></video>
 </main>
 <footer>
 <div class="footer-content">
