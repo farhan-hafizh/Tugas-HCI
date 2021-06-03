@@ -7,7 +7,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/charStyle.css">
   <script src="assets/javascript/script.js"></script>
 </head>
-<body onload="showSlides()">
+<body onload="showDivs(0)">
 <header>
 	<nav>
 		<div class="logo"><h1>FRAWLSALLA</h1></div>
@@ -29,87 +29,84 @@
 </header>
 <main>
   <!-- centaur -->
-    <div class="slides">
-      <div class="doc">
-        <div class="image">
-          <img src="assets/characters/centaur.jpg" alt="centaur">
-        </div>
-        <div class="desc">
-          <p style="font-weight:bold; margin-bottom:20px">Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
-            He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
-            As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
-            When he dies, Bradwarden wishes to be buried in the grounds of Omexe.</p>
-            <ul>
-              <li>He appears to have an admiration for Magnus, praising his honor.</li>
-              <li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
-              <li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
-            </ul>
-          </div>
-        </div>
-    </div>
-    <!-- ogre -->
-    <div class="slides">
-        <div class="doc">
-          <div class="image">
-            <img src="assets/characters/ogre.jpg" alt="ogre">
-          </div>
-          <div class="desc">
-            <p style="font-weight:bold; margin-bottom:20px">For reasons unknown, the Goddess of Luck tasked Aggron with watching over a flock of Firelarks. One such bird, Flockheart, managed to get separated from the flock, and ended up being Aggron's mount</p>
-          </div>
-        </div>
-    </div>
-    <!-- earth spirit -->
-    <div class="slides">
-        <div class="doc">
-          <div class="image">
-            <img src="assets/characters/centaur.jpg" alt="centaur">
-          </div>
-          <div class="desc">
-            <p style="font-weight:bold; margin-bottom:20px">Deep amid the Upland crags and cliffs there runs a seam of sacred jade long foresworn by highland miners. From this rare material, the likeness of the great general Kaolin was carved and buried at the head of a stone funerary army ten thousand strong—a force of soldiers and holy men, jesters and acrobats, carved by crafstmen and entombed for millennia in the dark embrace of the Earth.
-
-What the craftsmen had not known was that within the strange seam of jade flowed the spirit of the Earth itself—an elemental force at one with the planet. When the force within the carved jade found itself cut off from the life's blood of the world, it gathered its strength over the course of a thousand years and dug itself free and into the light. Now the great Kaolin Earth Spirit strides the Upland roads, fighting for the spirit of the Earth; and in times of need calls forth remnants of his buried army still locked in the loving embrace of the soil.</p>
-
-            </div>
-          </div>
-    </div>
-    <!-- dazzle -->
-    <div class="slides">
-          <div class="doc">
-            <div class="image">
-              <img src="assets/characters/centaur.jpg" alt="centaur">
-            </div>
-            <div class="desc">
-              <p style="font-weight:bold; margin-bottom:20px">Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
-                He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
-                As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
-                When he dies, Bradwarden wishes to be buried in the grounds of Omexe.</p>
-                <ul>
-                  <li>He appears to have an admiration for Magnus, praising his honor.</li>
-                  <li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
-                  <li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
-                </ul>
-              </div>
-            </div>
-    </div>
-    <!-- terror blade -->
-    <div class="slides">
-            <div class="doc">
-              <div class="image">
-                <img src="assets/characters/centaur.jpg" alt="centaur">
-              </div>
-              <div class="desc">
-                <p style="font-weight:bold; margin-bottom:20px">Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
-                  He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
-                  As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
-                  When he dies, Bradwarden wishes to be buried in the grounds of Omexe.</p>
-                  <ul>
-                    <li>He appears to have an admiration for Magnus, praising his honor.</li>
-                    <li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
-                    <li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
-                  </ul>
-                </div>
-              </div>
-    </div>
+	<div class="container">
+		<div class="slides">
+					<img src="assets/characters/centaur.jpg" alt="centaur">
+				<div class="desc" style="margin-bottom:20px">
+						Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
+						He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
+						As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
+						When he dies, Bradwarden wishes to be buried in the grounds of Omexe.
+						<ul>
+							<li>He appears to have an admiration for Magnus, praising his honor.</li>
+							<li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
+							<li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
+						</ul>
+					</div>
+		</div>
+		<!-- ogre -->
+		<div class="slides">
+					<img src="assets/characters/ogre.jpg" alt="centaur">
+				<div class="desc" style="margin-bottom:20px">
+						Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
+						He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
+						As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
+						When he dies, Bradwarden wishes to be buried in the grounds of Omexe.
+						<ul>
+							<li>He appears to have an admiration for Magnus, praising his honor.</li>
+							<li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
+							<li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
+						</ul>
+					</div>
+		</div>
+		<!-- earth spirit -->
+		<div class="slides">
+					<img src="assets/characters/earthspirit.jpeg" alt="centaur">
+				<div class="desc" style="margin-bottom:20px">
+						Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
+						He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
+						As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
+						When he dies, Bradwarden wishes to be buried in the grounds of Omexe.
+						<ul>
+							<li>He appears to have an admiration for Magnus, praising his honor.</li>
+							<li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
+							<li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
+						</ul>
+					</div>
+		</div>
+		<!-- dazzle -->
+		<div class="slides">
+					<img src="assets/characters/dazzle.jpg" alt="centaur">
+				<div class="desc" style="margin-bottom:20px">
+						Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
+						He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
+						As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
+						When he dies, Bradwarden wishes to be buried in the grounds of Omexe.
+						<ul>
+							<li>He appears to have an admiration for Magnus, praising his honor.</li>
+							<li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
+							<li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
+						</ul>
+					</div>
+		</div>
+		<!-- terror blade -->
+		<div class="slides">
+					<img src="assets/characters/terrorblade.jpg" alt="centaur">
+				<div class="desc" style="margin-bottom:20px">
+						Bradwarden is the champion of the centaur race, having won his honor by killing every challenger in the arena of Omexe. Awarded the prestigious Great Belt of Omexe for his feat, Bradwarden commands respect, and fellow centaurs rally to join in him combat.<br> Like other centaurs, Bradwarden believes combat to be the ultimate art form, likening swings of his blade to singing.<br>
+						He has accumulated at least a hundred victories in the arena, as evidenced by his Bloodrage Axe, taken from a vanquished warrior.
+						As part of his duties, Bradwarden protects the Gloried Horn of Druud, a sacred relic that calls all centaurs to battle.
+						When he dies, Bradwarden wishes to be buried in the grounds of Omexe.
+						<ul>
+							<li>He appears to have an admiration for Magnus, praising his honor.</li>
+							<li>He dislikes creatures with fewer legs, preferring the company of other four-legged beings, even if they are not centaurs.</li>
+							<li>He shares a background with Disruptor minimap icon.png Disruptor, who is also from Druud.</li>
+						</ul>
+					</div>
+		</div>
+		<button class="btn left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="btn right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
 </main>
 <footer>
 <div class="footer-content">
