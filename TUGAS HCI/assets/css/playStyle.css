@@ -21,3 +21,7 @@ main #bgVid {
     display: flex;
     flex-direction: column;
 }
+@-webkit-keyframes blink{
+  0%{background-color: black}
+  50%{}
+}
