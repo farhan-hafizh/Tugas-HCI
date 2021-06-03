@@ -6,6 +6,13 @@ main #bgVid {
   min-width: 100%;
   min-height: 100%
 }
+@-webkit-keyframes blink{
+  0%{background-color: black}
+  25%{background-color: white}
+  50%{background-color: black}
+  75%{background-color: white}
+  100%{background-color: white}
+}
 .content form {
   margin-top: 50%;
   font-family: arial;
@@ -20,8 +27,5 @@ main #bgVid {
     justify-content: center;
     display: flex;
     flex-direction: column;
-}
-@-webkit-keyframes blink{
-  0%{background-color: black}
-  50%{}
+    animation: blink 5s infinite linear;
 }
