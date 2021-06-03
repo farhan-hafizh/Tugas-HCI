@@ -13,20 +13,24 @@
 			<div class="dropdown">
     		<button class="menu">MENU</button>
     		<div class="dropdown-content">
-          <a href="index.html">Home</a>
-      		<a href="#">Screeshots</a>
+					<a href="index.html">Home</a>
       		<a href="#">Events</a>
-      		<a href="#">Charachters</a>
+      		<a href="char.html">Charachters</a>
     		</div>
   		</div>
-			<div>
-				<button class="play" onclick="window.location.href = 'play.html';">PLAY</button>
-			</div>
 		</div>
 		</nav>
 </header>
 <main>
-
+	<video autoplay loop id="bgVid">
+	  <source src="assets/video/vid.mp4" type="video/mp4">
+	</video>
+	<div class="container">
+		<form class="login-form" action="index.html" method="post">
+			<label for="uname">Username</label>
+			<input type="text" name="username" placeholder="Input Username">
+		</form>
+	</div>
 </main>
 <footer>
 <div class="footer-content">
@@ -34,7 +38,7 @@
 		<p>Contact Us</p>
 	</div>
 	<div class="copyright">
-		<p>2021 Frawlsalla</p>
+		<p>&copy 2021 Frawlsalla</p>
 	</div>
 	<div class="social">
 		<a href="https://www.instagram.com">
