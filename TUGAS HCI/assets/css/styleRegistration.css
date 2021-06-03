@@ -80,7 +80,7 @@ header nav .menus .play:hover{
 main{
     display: flex;
     justify-content: space-around;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bg.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../bg.jpg");
     height: 100vh ;
 }
 
