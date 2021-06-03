@@ -4,9 +4,10 @@
 	<title>FRAWLSALLA</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/playStyle.css">
 </head>
 <body>
-<header>
+	<header>
 	<nav>
 		<div class="logo"><h1>FRAWLSALLA</h1></div>
 		<div class="menus">
@@ -22,33 +23,21 @@
 		</nav>
 </header>
 <main>
-	<form class="login-form" action="index.html" method="post">
-		<label>Email :</label>
-		<input id="email" name="email" placeholder="Enter Email" type="text" value="">
-		<br>
-		<label>Password :</label>
-		<input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">
-		<input type="submit" value="Submit" name="Submit"/>
-	</form>
-	<video src="assets/video/vid.mp4" autoplay loop id="bgVid" type="video/mp4"></video>
+	<video autoplay loop id="bgVid">
+  	<source src="assets/video/vid.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+	<div class="content">
+		<form class="login-form" action="index.html" method="post">
+			<label>Email </label>
+			<input id="email" name="email" placeholder="Enter Email" type="text" value="">
+			<br>
+			<label>Password </label>
+			<input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">
+			<input type="submit" value="Submit" name="Submit"/>
+			<a href="registeration.html">Register?</a>
+		</form>
+	</div>
 </main>
-<footer>
-<div class="footer-content">
-	<div class="contact">
-		<p>Contact Us</p>
-	</div>
-	<div class="copyright">
-		<p>&copy 2021 Frawlsalla</p>
-	</div>
-	<div class="social">
-		<a href="https://www.instagram.com">
-			<img src="assets/instagram.png" alt="instagram">
-		</a>
-		<a href="https://www.twitter.com">
-			<img src="assets/twitter.png" alt="twitter">
-		</a>
-	</div>
-</div>
-</footer>
 </body>
 </html>
