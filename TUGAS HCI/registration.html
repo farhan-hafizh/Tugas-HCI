@@ -6,34 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/styleRegistration.css">
-    <script src="assets/javascript/script.js"></script>
 </head>
 <body>
-    <h1 style="text-align: center;">REGISTRATION FORM</h1>
-    <form name="RegForm" onsubmit="return validate()" method="post">
-        <label>Name :</label>
-        <input id="name" name="name" placeholder="Enter Name" type="text">
-        <br>
-        <label>Email :</label>
-        <input id="email" name="email" placeholder="Enter Email" type="text">
-        <br>
-        <label>Password :</label>
-        <input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">
-        <br>
-        <label>Gender :</label>
-        <input id="male" name="gender" type="radio" value="Male">
-        <label>Male</label>
-        <input id="female" name="gender" type="radio" value="Female">
-        <label>Female</label>
-        <br>
-        <input type="checkbox" name="terms" id="terms">
-        <label>Agree with terms and condition </label>
-        <p>
-            <input type="submit"
-                   value="Submit" name="Submit" />
-            <input type="reset"
-                   value="Reset" name="Reset" />
-        </p>
-    </form>
+    <header>
+        <nav>
+            <div class="logo"><h1>FRAWLSALLA</h1></div>
+            <div class="menus">
+                <div class="dropdown">
+                <button class="menu">MENU</button>
+                <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="play.html" class="small-dev">Play</a>
+                  <a href="#">Events</a>
+                  <a href="char.html">Charachters</a>
+                </div>
+              </div>
+                <div>
+                    <button class="play" onclick="window.location.href = 'registration.html';">PLAY</button>
+                </div>
+            </div>
+            </nav>
+    </header>
+    <main>
+        <div class = "left">
+            <p>Before You Play This Game,</p> 
+            <br>
+            <p>You need to Register Your Self</p>
+        </div>
+
+        <div class = "right">
+            <form name="RegForm" onsubmit=" return validate()" method="post">
+                <label>Name     :</label>
+                <input id="name" name="name" placeholder="Enter Name" type="text">
+                <br>
+                <label>Email    :</label>
+                <input id="email" name="email" placeholder="Enter Email" type="text">
+                <br>
+                <label>Password :</label>
+                <input id = "password" type = "password" placeholder="Enter Password [6-15]" value = "">  
+                <br>
+                <label>Gender :</label>
+                <input id="male" name="gender" type="radio" value="Male">
+                <label>Male</label>
+                <input id="female" name="gender" type="radio" value="Female">
+                <label>Female</label>
+                <br>
+                <input type="checkbox" name="terms" id="terms">
+                <label>Agree with terms and condition </label>
+                <br> <br>
+                <div>
+                    <button class="submit" type="submit" value="submit">SUBMIT</button>
+                    <button class="reset" type="reset" value="submit">RESET</button>
+                </div>
+                <!-- <p>
+                    <input type="submit" 
+                           value="Submit" name="Submit" />
+                    <input type="reset" 
+                           value="Reset" name="Reset" />
+                </p> -->
+            </form>
+            <script src="assets/javascript/validation.js"></script>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact">
+                <p>Contact Us</p>
+            </div>
+            <div class="copyright">
+                <p>&copy 2021 Frawlsalla</p>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com">
+                    <img src="assets/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.twitter.com">
+                    <img src="assets/twitter.png" alt="twitter">
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

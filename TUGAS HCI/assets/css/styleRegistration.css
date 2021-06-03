@@ -1,13 +1,151 @@
-div { 
-    box-sizing: border-box;
-    width: 100%;
-    border: 100px solid black;
-    float: left;
-    align-content: center;
-    align-items: center;
+*{
+    margin: 0;
+    font-family: "Copperplate Gothic Bold";
 }
-   
-form {   
-    margin: 0 auto;
-    width: 600px;
+
+body{
+    height: 100%
+}
+header{
+    background-color: black;
+    height: 15vh;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+header nav .menus{
+    margin: 35px 0;
+    margin-right: 10px;
+    justify-content: space-around;
+    display: flex;
+}
+header nav .menus button{
+    height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 100px;
+    border: none;
+    color: white;
+    border-radius: 10%
+}
+header nav .menus .menu{
+    background-color: #161276;
+}
+header nav .menus .menu:hover{
+    background-color: #2620aa;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: flex;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-content .small-dev{display: none}
+header nav .menus .play{
+    background-color: #881919 ;
+}
+header nav .menus .play:hover{
+    background-color: #a52323;
+}
+  header nav h1{
+    margin-top: 25px;
+    color: white;
+    margin-left: 15px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+main{
+    display: flex;
+    justify-content: space-around;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./bg.jpg");
+    height: 100vh ;
+}
+
+main .left{
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .left p{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
+main .right{
+    margin: auto 0;
+}
+
+main .right form{
+    font-size: 20px;
+    color: white;
+    text-align: left;
+}
+
+main .right button{
+    height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    width: 100px;
+    border: none;
+    color: white;
+    border-radius: 10%
+  }
+
+main .right form .submit{
+    background-color: #127630;
+}
+
+main .right form .reset{
+    background-color: #761212;
+}
+
+footer{
+    background-color: black;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer .footer-content{
+    margin: auto;
+    justify-content:center;
+}
+footer .footer-content .social{
+    justify-content: center;
+    display: flex;
+    margin-top: 10px
+}
+footer .footer-content .social img{
+    width: 30px;
+    height: 30px;
+    padding-left: 10px
+}
+footer .footer-content div p{
+    color: white;
+    text-align: center
 }
