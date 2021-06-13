@@ -1,5 +1,3 @@
-
-
 var slideIndex = 0;
 // showSlides();
 
@@ -7,6 +5,13 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("slides");
@@ -31,7 +36,6 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 function validate() {
     var name = document.getElementById("name").value;
