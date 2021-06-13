@@ -1,0 +1,15 @@
+Members of the group :
+2301914176 - Farhan Novyan Hafizh
+2301927046 - Isaac Andrean Yoshua
+2301849012 - Federico Wurijatmo
+
+Work Duration: about two weeks
+
+Text editor: atom, sublime, vscode
+
+Hidden creativity:
+- There is a video on the page play.html, but there is a problem if we use chrome because we are video tag. The video can be played properly if we use firefox.
+- There is image slider on page index.html
+- There is text slide on page index.html
+- If we minimize the window, the button play will disappear, but we can find the button on the Button menu.
+- On the Image slide, we can click the dot below the image to see another image.
